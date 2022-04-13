@@ -44,7 +44,6 @@ function Coincart() {
     setLoading(false);
   };
   useEffect(() => {
-   
     fetchCoinchart();
   }, [id, days]);
 

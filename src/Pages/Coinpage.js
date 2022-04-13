@@ -52,7 +52,7 @@ function CoinPage() {
         <Container className="pageCenter">
           <h1 style={{ margin: "18" }}>Cryptocurrency Prices</h1>
           <TextField
-            className="textFieldstyle"
+            style={{ width: "100%", marginBottom: "20px" }}
             label="Search For a Crypto Currency.."
             variant="outlined"
             onChange={(e) => setSearch(e.target.value)}
@@ -67,7 +67,7 @@ function CoinPage() {
                     {["Coin", "Price", "24h Change", "Market Cap"].map(
                       (head) => (
                         <TableCell
-                          className="tablecellStyle"
+                          style={{ color: "white", fontWeight: "700" }}
                           key={head}
                           align={head === "Coin" ? "inherit" : "right"}
                         >
@@ -102,21 +102,8 @@ function CoinPage() {
                               height="50"
                               style={{ marginBottom: 10 }}
                             />
-                            <div
-                              style={{
-                                display: "flex",
-                                flexDirection: "column",
-                              }}
-                            >
-                              <span
-                                style={{
-                                  textTransform: "uppercase",
-                                  fontSize: 22,
-                                  color: "white",
-                                }}
-                              >
-                                {row.symbol}
-                              </span>
+                            <div className="rowFlex">
+                              <span className="textSpan">{row.symbol}</span>
                               <span style={{ color: "#353535" }}>
                                 {row.name}
                               </span>
@@ -157,12 +144,7 @@ function CoinPage() {
           <Pagination
             count={parseInt((SearchCoin().length / 10).toFixed(0))}
             color="primary"
-            style={{
-              padding: 20,
-              width: "100%",
-              display: "flex",
-              justifyContent: "center",
-            }}
+            className="pagination"
             onChange={(_, value) => {
               setPage(value);
               window.scroll(0, 450);

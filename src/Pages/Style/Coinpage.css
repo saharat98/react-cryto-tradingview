@@ -10,17 +10,30 @@
 .pageCenter{
     text-align: center;
 }
-.textFieldstyle{
-    width: 100%;
-    margin-bottom: 20px;
-}
+
 .loading{
     background-color: #F2FC2B;
 }
 .tableheadStyle{
     background-color: #a9835a;
 }
-.tablecellStyle{
-            color: rgb(255, 255, 255);
-            font-weight: 700px;
+/* .tablecellStyle{
+    color: rgb(255, 0, 0);
+    font-weight: 700px;
+} */
+.pagination{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.textSpan{
+            text-transform:uppercase;
+                font-size:22px;
+                color: white;
+}
+.rowFlex{
+    display: flex;
+    flex-direction: column;
 }

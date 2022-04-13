@@ -1,0 +1,25 @@
+
+.bgHomepage {
+  background-image: url(./../../assets/bgHomepage.jpg);
+  min-width: 100vw;  
+  background-size: cover;
+}
+.banner{
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 35;
+  justify-content: center;
+  /* justify-content: space-around; */
+
+}
+.textBanner{
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}
+

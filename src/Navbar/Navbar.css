@@ -1,0 +1,28 @@
+.Nav {
+  background: #7e9ba9;
+  height: 80px;
+  display: flex;
+  font-size: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+}
+
+.Nav-item {
+  height: 80px;
+  display: flex;
+}
+.textStyle {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  padding: 0 1rem;
+  height: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+  margin-left: 5rem;
+  text-decoration: none;
+} 
+

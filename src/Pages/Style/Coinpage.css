@@ -1,0 +1,26 @@
+.tableRow{
+    /* cursor: pointer; */
+    text-decoration: none;
+    background-color: #ffffff,
+                   
+}
+.tableRow:hover{
+    background-color: #5f8ea5;
+}
+.pageCenter{
+    text-align: center;
+}
+.textFieldstyle{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.loading{
+    background-color: #F2FC2B;
+}
+.tableheadStyle{
+    background-color: #a9835a;
+}
+.tablecellStyle{
+            color: rgb(255, 255, 255);
+            font-weight: 700px;
+}

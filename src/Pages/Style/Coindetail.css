@@ -1,0 +1,21 @@
+.Banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+            
+.imgSpin{
+    margin-top: 20px;
+    animation: rotatelogo 3s linear infinite;
+    /* transform: rotateY(45deg); */
+}
+
+@keyframes rotatelogo{
+from {
+    transform: rotateY(0deg);
+}
+to {
+    transform: rotateY(360deg);
+}
+}
+

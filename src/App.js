@@ -3,7 +3,6 @@ import { Route, Routes } from "react-router-dom";
 import Homepage from "./Pages/Homepage";
 import Navbar from "./Navbar/Navbar";
 import Coindetail from "./Pages/Coindetail";
-import CoinChart from "./Pages/Coinchart";
 
 function App() {
   return (

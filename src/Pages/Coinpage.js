@@ -15,7 +15,7 @@ import {
   TableCell,
   TableBody,
   Container,
-} from "@material-ui/core";
+} from "@mui/material";
 
 function CoinPage() {
   const history = useNavigate();
@@ -56,6 +56,7 @@ function CoinPage() {
             label="Search For a Crypto Currency.."
             variant="outlined"
             onChange={(e) => setSearch(e.target.value)}
+            value={search}
           />
           <TableContainer>
             {loading ? (
@@ -67,7 +68,10 @@ function CoinPage() {
                     {["Coin", "Price", "24h Change", "Market Cap"].map(
                       (head) => (
                         <TableCell
-                          style={{ color: "white", fontWeight: "700" }}
+                          style={{
+                            color: "white",
+                            fontWeight: "700",
+                          }}
                           key={head}
                           align={head === "Coin" ? "inherit" : "right"}
                         >

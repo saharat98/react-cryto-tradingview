@@ -7,7 +7,6 @@
 .imgSpin{
     margin-top: 20px;
     animation: rotatelogo 3s linear infinite;
-    /* transform: rotateY(45deg); */
 }
 
 @keyframes rotatelogo{

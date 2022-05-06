@@ -1,7 +1,6 @@
 import React from "react";
 import "./Style/Homepage.css";
 import Coinpage from "./Coinpage";
-
 function Homepage() {
   return (
     <>

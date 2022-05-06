@@ -2,11 +2,21 @@ import React from "react";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import { CircularProgress } from "@material-ui/core";
+import { CircularProgress, styled } from "@material-ui/core";
 import { Line } from "react-chartjs-2";
 import "./Style/Coinchart.css";
 import { Chart as ChartJS } from "chart.js/auto";
 import Button from "@mui/material/Button";
+
+const MyButton = styled(Button)({
+  background: "linear-gradient(45deg, #A7CEE1 30%, #bfd7e3 90%)",
+  border: 0,
+  borderRadius: 3,
+  boxShadow: "0 3px 5px 2px #636465",
+  color: "white",
+  height: 48,
+  padding: "0 30px",
+});
 
 function Coincart() {
   const [coinChart, setcoinCart] = useState();
@@ -98,8 +108,7 @@ function Coincart() {
                   }}
                 >
                   {chartDays.map((day) => (
-                    <Button
-                      variant="outlined"
+                    <MyButton
                       key={day.value}
                       onClick={() => {
                         setDays(day.value);
@@ -108,7 +117,7 @@ function Coincart() {
                       selected={day.value === days}
                     >
                       {day.label}
-                    </Button>
+                    </MyButton>
                   ))}
                 </div>
               </div>

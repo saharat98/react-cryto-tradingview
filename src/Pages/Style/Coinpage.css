@@ -1,5 +1,5 @@
 .tableRow{
-    /* cursor: pointer; */
+    cursor: pointer;
     text-decoration: none;
     background-color: #ffffff,
                    
@@ -17,21 +17,18 @@
 .tableheadStyle{
     background-color: #a9835a;
 }
-/* .tablecellStyle{
-    color: rgb(255, 0, 0);
-    font-weight: 700px;
-} */
+
 .pagination{
-    padding: 20px;
     width: 100%;
     display: flex;
     justify-content: center;
+    padding:  20px 0px;
 
 }
 .textSpan{
-            text-transform:uppercase;
-                font-size:22px;
-                color: white;
+    text-transform:uppercase;
+    font-size:22px;
+    color: white;
 }
 .rowFlex{
     display: flex;

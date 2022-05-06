@@ -20,7 +20,6 @@ function Coindetail() {
   };
 
   useEffect(() => {
-    
     fetchCoin(id);
   }, [id]);
 
@@ -34,7 +33,7 @@ function Coindetail() {
             <img
               src={coin?.image.large}
               alt={coin?.name}
-              height="200"
+              height="150"
               className="imgSpin"
             ></img>
             <h1>{coin?.name}</h1>
